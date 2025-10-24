@@ -4,7 +4,9 @@ BookaCita is a service designed to connect customers and local businesses throug
 The initial version (v1) focuses on barbers and mechanics, helping users search, view, and book appointments directly with participating businesses.
 
 View V1 UI online here:
+
 https://booka-cita-ui.vercel.app/business/signup
+
 https://booka-cita-ui.vercel.app/
 
 🚀 Project Overview
@@ -36,13 +38,15 @@ The platform provides:
 3. **Book Appointment**
 
    `POST /book/`
+
    `{
-      “businessName” : String,
-      “email” : String,
-      “phone” : String,
-      “location” : String
-      …
+        “customerId”: String,
+        “customerName” : String,
+        “Payment” : Boolean
    }`
+
+   
+  
 
    Description:
    Creates a booking if the payment succeeds.
@@ -53,24 +57,43 @@ The platform provides:
 1. **Sign Up**
    `POST /signup/`
 
+     `{
+      “businessName” : String,
+      “email” : String,
+      “phone” : String,
+      “location” : String
+      …
+   }`
+   
    **Description:**
    Registers a new business into the BookaCita system.
 
-2. **Post Availability**
+3. **Post Availability**
 
    `POST /availability/`
+
+   `{
+        “date”: String,
+        “time”: String
+   }`
+
 
    **Description:**
    Businesses can post their daily or weekly available time slots.
 
-3. **Update Availability**
+4. **Update Availability**
 
     `PUT /update/availability/`
+
+   `{
+        “date”: String,
+        “time”: String
+   }`
 
    **Description:**
    Allows a business to modify existing availability slots.
 
-4. **View Bookings**
+6. **View Bookings**
 
    `GET /booking?id=<businessId>`
 
