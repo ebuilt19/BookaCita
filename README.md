@@ -3,6 +3,10 @@
 BookaCita is a service designed to connect customers and local businesses through simple, reliable appointment scheduling.
 The initial version (v1) focuses on barbers and mechanics, helping users search, view, and book appointments directly with participating businesses.
 
+View V1 UI online here:
+https://booka-cita-ui.vercel.app/business/signup
+https://booka-cita-ui.vercel.app/
+
 🚀 Project Overview
 BookaCita aims to simplify the scheduling process for both customers and businesses.
 The platform provides:
