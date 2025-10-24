@@ -9,6 +9,10 @@ https://booka-cita-ui.vercel.app/business/signup
 
 https://booka-cita-ui.vercel.app/
 
+**Github Repo:**
+
+https://github.com/paulle12/BookaCitaUI
+
 🚀 Project Overview
 BookaCita aims to simplify the scheduling process for both customers and businesses.
 The platform provides:
