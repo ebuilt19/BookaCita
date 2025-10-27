@@ -1,38 +1,63 @@
-HELP.md
+# =====================================
+# Java / Spring Boot / Maven .gitignore
+# =====================================
+
+# Build output
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+build/
+out/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IDEs and editors
+.idea/
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+*.iws
 .vscode/
-.idea/
+*.swp
+*.swo
+.DS_Store
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.pid
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment / config secrets
+application-local.yml
+application-dev.yml
+.env
+*.env
+*.pem
+*.key
+*.crt
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.settings/
+dependency-reduced-pom.xml
+
+# Node (if frontend lives inside repo)
+node_modules/
+dist/
+package-lock.json
+
+# JetBrains IDEs cache
+out/
+.idea_modules/
+*.class
+
+# Test reports
+test-output/
+surefire-reports/
+
+# Temporary DBs or generated content
+*.db
+*.sqlite
+data/

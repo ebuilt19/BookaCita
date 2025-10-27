@@ -1,2 +1,28 @@
-/mvnw text eol=lf
+# =====================================
+# .gitattributes for consistent behavior
+# =====================================
+
+# Auto normalize line endings
+* text=auto
+
+# Force LF endings for source files
+*.java text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.xml text eol=lf
+
+# Keep Windows scripts compatible
+*.bat text eol=crlf
 *.cmd text eol=crlf
+
+# Treat common binaries as binary files
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
