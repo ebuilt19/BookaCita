@@ -12,7 +12,7 @@ public class Business {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(name = "business_name")
     private String businessName;
     private String email;
     private String phone;

@@ -22,6 +22,10 @@ spring:
           lob:
             non_contextual_creation: true
 
+  sql:
+    init:
+      mode: always               # ensure data.sql is executed for PostgreSQL
+
   jackson:
     serialization:
       indent_output: true
