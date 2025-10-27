@@ -20,6 +20,13 @@ The platform provides:
 - **Businesses** with tools to manage availability, sign up, and update their bookings.  
 - **Future versions** will include online payments, reviews, and support for more service categories.
 
+
+🗺️ **API documentation for BookaCita scheduling platform**
+
+http://localhost:8080/swagger-ui/index.html
+
+
+
 ⚙️ Planned API Endpoints
 
 🧍 **Customer Side**
