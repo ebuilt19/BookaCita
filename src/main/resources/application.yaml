@@ -1,14 +1,12 @@
 # ===============================
-# Spring Datasource (PostgreSQL)
+# Spring Datasource (PostgreSQL) & JPA
 # ===============================
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/bookacita
-    # TODO: Move username and password to environment variables before committing to Git
     username: bookacita_user
     password: strongpassword123
     driver-class-name: org.postgresql.Driver
-    initialization-mode: always
     hikari:
       maximum-pool-size: 10
       minimum-idle: 2
@@ -23,6 +21,10 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+
+  jackson:
+    serialization:
+      indent_output: true
 
 # ===============================
 # Server Configuration
@@ -43,14 +45,6 @@ logging:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %level - %logger{36} - %msg%n"
 
 # ===============================
-# Jackson JSON
-# ===============================
-spring:
-  jackson:
-    serialization:
-      indent_output: true
-
-# ===============================
 # Swagger / OpenAPI
 # ===============================
 springdoc:
@@ -61,7 +55,7 @@ springdoc:
     operationsSorter: alpha
 
 # ===============================
-# Email / Notification (placeholders for future)
+# Email / Notification
 # ===============================
 notification:
   email:
